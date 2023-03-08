@@ -266,7 +266,7 @@ header .container .content-part .headerCont h1 {
   }
 }
 .clientTestimonials {
-  padding: 100px 0;
+  padding: 100px 0 0;
 }
 .clientTestimonials h3 {
   text-align: center;
@@ -274,4 +274,38 @@ header .container .content-part .headerCont h1 {
   font-size: clamp(1rem, 0.00000001rem + 10vw, 2rem);
   font-weight: 400;
   color: #a7abae;
+  margin-bottom: 100px;
+}
+.clientTestimonials .persons {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(200px, 1fr));
+  min-height: 500px;
+  grid-gap: 20px;
+}
+.clientTestimonials .persons div {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.clientTestimonials .persons div img {
+  margin-bottom: 80px;
+  width: 100px;
+  border-radius: 50%;
+}
+.clientTestimonials .persons div p {
+  margin-bottom: 80px;
+  font-size: 20px;
+  line-height: 22.4px;
+  letter-spacing: 0.3px;
+  font-family: Barlow, sans-serif;
+  color: #5a636c;
+}
+.clientTestimonials .persons div h4 {
+  color: #23303e;
+  letter-spacing: 1px;
+  font-family: "Fraunces", serif;
+  font-size: 25.2px;
+  line-height: normal;
 }/*# sourceMappingURL=main.css.map */

@@ -238,11 +238,41 @@ header
 // end image chan
 // start client testimonials
 .clientTestimonials
-    padding: 100px 0
+    padding: 100px 0 0
     h3
         text-align: center
         font-family: "Times New Roman", Times, Baskerville, Georgia, serif
         font-size: clamp(1rem , 0.00000001rem + 10vw , 2rem)
         font-weight: 400
         color: #a7abae
+        margin-bottom: 100px
+    .persons
+        display: grid
+        grid-template-columns: repeat(3 , minmax(200px, 1fr))
+        min-height: 500px
+        grid-gap: 20px
+        div
+            display: flex
+            flex-direction: column
+            text-align: center
+            align-items: center
+            justify-content: space-evenly
+            img
+                margin-bottom: 80px
+                width: 100px
+                border-radius: 50%
+            p
+                margin-bottom: 80px
+                font-size: 20px
+                line-height: 22.4px
+                letter-spacing: 0.3px
+                font-family: Barlow, sans-serif
+                color: #5a636c
+            h4
+                color: #23303e
+                letter-spacing: 1px
+                font-family: 'Fraunces', serif
+                font-size: 25.2px
+                line-height: normal
+
 // end client testimonials
