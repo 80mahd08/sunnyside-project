@@ -264,4 +264,14 @@ header .container .content-part .headerCont h1 {
     height: 500px !important;
     padding: 280px 10% 10%;
   }
+}
+.clientTestimonials {
+  padding: 100px 0;
+}
+.clientTestimonials h3 {
+  text-align: center;
+  font-family: "Times New Roman", Times, Baskerville, Georgia, serif;
+  font-size: clamp(1rem, 0.00000001rem + 10vw, 2rem);
+  font-weight: 400;
+  color: #a7abae;
 }/*# sourceMappingURL=main.css.map */
