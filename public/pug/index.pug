@@ -1,0 +1,60 @@
+doctype
+html(lang='en')
+    head
+        meta(charset='utf-8')
+        title sunnyside
+        // FHF framework file
+        link(rel="stylesheet", href="css/FHF.css", attr)
+        // main style file
+        link(rel="stylesheet", href="css/main.css", attr) 
+        // main script file
+        script(src="js/main.js" defer) 
+    body
+        // start header
+        header.resBackgImg
+            .container
+                .top-part
+                    .logo
+                        img(src="images/logo.svg", alt="logo")
+                    .navLogo
+                        span.lines
+                            each i in [1 , 2 , 3]
+                                span.line
+                nav.dispNone
+                    - let navCon = ["About" , "Services" , "Project"]
+                    ul
+                        each i in navCon
+                            li
+                                a(href="#")= i
+                    a.contactBtn(href="#") CONTACT
+                .content-part
+                    .headerCont
+                        h1 WE ARE CREATIVES
+                        img(src="images/arrow.svg", alt="alt")
+        // end header
+        // start transform
+        section.transform
+            .textCont
+                h2.h1 Transform your brand
+                p We are a full-service creative agency specializing in helping brans grow fast. Engage your clients through compelling visuals that do most of the marketing for you
+                a(href="#") learn more
+            .image.resBackgImg
+        // start stand out
+        section.standOut
+            .imageStanOut.resBackgImg
+            .textCont
+                h2.h1 Stand out to the right audience
+                p Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places.
+                a.aStandOut(href="") learn more
+        // end stand out
+        // start image chan
+        section.imageChan
+            .imageLeft.resBackgImg
+                h3 Graphic design
+                p Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.
+            .imageRight.resBackgImg
+                h3 Photography
+                p Increase your credibility by getting the most stunning, high-quality photos that improve your business image.
+        // end image chan
+        section.clientTestimonials
+            
