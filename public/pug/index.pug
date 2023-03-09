@@ -88,11 +88,11 @@ html(lang='en')
         footer
             .icon
                 img(src="images/logo.svg", alt="logo")
-            nav
-                ul
-                    each i in navCon
-                        li
-                            a(href="#")= i
+
+            ul.unstyledList.navStyle
+                each i in navCon
+                    li
+                        a(href="#")= i
             .social
                 each icon in socialLinks
                     img(src=icon , alt="")
