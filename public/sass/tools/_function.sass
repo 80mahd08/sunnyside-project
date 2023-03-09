@@ -1,7 +1,7 @@
 @function trans($divBy , $emOrRemVal , $emOrRem)
-    @if $emOrRem == "em"      
-        @return #{$divBy / $emOrRemVal + "em"} 
+    @if $emOrRem == "em"
+        @return #{$divBy / $emOrRemVal + "em"}
     @else if $emOrRem == "rem"
         @return #{$divBy / $emOrRemVal + "rem"}
-    @else 
+    @else
         @error $emOrRem + " it has to be 'em' or 'rem' "

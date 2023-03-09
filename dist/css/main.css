@@ -131,24 +131,30 @@ header .container .content-part .headerCont h1 {
     font-size: 40px !important;
   }
 }
-.transform, .standOut {
+.transform,
+.standOut {
   display: flex;
   flex-wrap: wrap;
 }
-.transform div, .standOut div {
+.transform div,
+.standOut div {
   width: 50%;
   height: 600px;
 }
-.transform div.image, .standOut div.image {
+.transform div.image,
+.standOut div.image {
   background-image: url("../images/image-transform.jpg");
 }
-.transform div.imageStanOut, .standOut div.imageStanOut {
+.transform div.imageStanOut,
+.standOut div.imageStanOut {
   background-image: url("../images/image-stand-out.jpg");
 }
-.transform div.textCont, .standOut div.textCont {
+.transform div.textCont,
+.standOut div.textCont {
   padding: 30px;
 }
-.transform div.textCont .h1, .standOut div.textCont .h1 {
+.transform div.textCont .h1,
+.standOut div.textCont .h1 {
   font-family: "Fraunces", serif;
   font-size: 42px;
   font-weight: 900;
@@ -157,14 +163,16 @@ header .container .content-part .headerCont h1 {
   margin-bottom: 40px;
   margin-top: 0;
 }
-.transform div.textCont p, .standOut div.textCont p {
+.transform div.textCont p,
+.standOut div.textCont p {
   padding-right: 50px;
   font-family: "Barlow", sans-serif;
   color: #818498;
   line-height: 29px;
   font-size: 18px;
 }
-.transform div.textCont a, .standOut div.textCont a {
+.transform div.textCont a,
+.standOut div.textCont a {
   font-family: "Times New Roman";
   text-decoration: none;
   border-bottom: 4px solid #fdee99;
@@ -178,42 +186,52 @@ header .container .content-part .headerCont h1 {
   color: #23303e;
   transition: all 0.5s ease;
 }
-.transform div.textCont a:hover, .standOut div.textCont a:hover {
+.transform div.textCont a:hover,
+.standOut div.textCont a:hover {
   border-bottom: 6px solid #ffff00;
 }
-.transform div.textCont a.aStandOut, .standOut div.textCont a.aStandOut {
+.transform div.textCont a.aStandOut,
+.standOut div.textCont a.aStandOut {
   border-color: #ffc9c2;
 }
-.transform div.textCont a.aStandOut:hover, .standOut div.textCont a.aStandOut:hover {
+.transform div.textCont a.aStandOut:hover,
+.standOut div.textCont a.aStandOut:hover {
   border-color: red;
 }
 
 @media (max-width: 890px) and (min-width: 362px) {
-  .transform .textCont, .standOut .textCont {
+  .transform .textCont,
+  .standOut .textCont {
     height: 360px !important;
   }
-  .transform .textCont .h1, .standOut .textCont .h1 {
+  .transform .textCont .h1,
+  .standOut .textCont .h1 {
     margin-bottom: 10px !important;
   }
-  .transform .textCont p, .standOut .textCont p {
+  .transform .textCont p,
+  .standOut .textCont p {
     margin-top: 20px !important;
   }
 }
 @media (max-width: 890px) {
-  .transform div, .standOut div {
+  .transform div,
+  .standOut div {
     width: 100%;
   }
-  .transform div h2, .standOut div h2 {
+  .transform div h2,
+  .standOut div h2 {
     margin-top: 0;
     margin-bottom: 35px !important;
     font-size: 35px !important;
     text-align: center;
   }
-  .transform div p, .standOut div p {
+  .transform div p,
+  .standOut div p {
     padding: 0 !important;
     text-align: center;
   }
-  .transform .textCont a, .standOut .textCont a {
+  .transform .textCont a,
+  .standOut .textCont a {
     margin: 0 auto !important;
     padding: 25px !important;
     height: 450px;
@@ -389,4 +407,4 @@ footer .social {
 }
 footer .social img {
   width: 8%;
-}/*# sourceMappingURL=main.css.map */
+} /*# sourceMappingURL=main.css.map */
