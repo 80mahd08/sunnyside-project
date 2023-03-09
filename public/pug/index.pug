@@ -1,3 +1,5 @@
+- let navCon = ["About" , "Services" , "Project"]
+- let socialLinks = ["images/facebook.svg" , "images/twitter.svg" , "images/pint.svg" , "images/insta.svg"]
 doctype
 html(lang='en')
     head
@@ -21,7 +23,6 @@ html(lang='en')
                             each i in [1 , 2 , 3]
                                 span.line
                 nav.dispNone
-                    - let navCon = ["About" , "Services" , "Project"]
                     ul
                         each i in navCon
                             li
@@ -78,3 +79,21 @@ html(lang='en')
                         h4 Jennie F.
                         span Business Owner
         // end client testimonials
+        // start image gallery
+        section.imgGall
+            each i in [1 , 2 , 3 , 4]
+                .img.resBackgImg
+        // end image gallery
+        // start footer
+        footer
+            .icon
+                img(src="images/logo.svg", alt="logo")
+            nav
+                ul
+                    each i in navCon
+                        li
+                            a(href="#")= i
+            .social
+                each icon in socialLinks
+                    img(src=icon , alt="")
+        // end footer

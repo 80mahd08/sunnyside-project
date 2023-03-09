@@ -233,8 +233,9 @@ header .container .content-part .headerCont h1 {
 }
 .imageChan div {
   width: 50%;
-  padding: 270px 10% 0 20%;
+  padding: 290px 10% 0 20%;
   text-align: center;
+  height: 500px;
 }
 .imageChan div h3 {
   font-family: "Fraunces", serif;
@@ -261,12 +262,12 @@ header .container .content-part .headerCont h1 {
   }
   .imageChan div {
     width: 100% !important;
-    height: 500px !important;
     padding: 280px 10% 10%;
   }
 }
 .clientTestimonials {
   padding: 100px 0 0;
+  margin-bottom: 100px;
 }
 .clientTestimonials h3 {
   text-align: center;
@@ -287,7 +288,6 @@ header .container .content-part .headerCont h1 {
   flex-direction: column;
   text-align: center;
   align-items: center;
-  justify-content: space-evenly;
 }
 .clientTestimonials .persons div img {
   margin-bottom: 80px;
@@ -308,4 +308,50 @@ header .container .content-part .headerCont h1 {
   font-family: "Fraunces", serif;
   font-size: 25.2px;
   line-height: normal;
+  margin-bottom: 10px;
+}
+.clientTestimonials .persons div span {
+  color: #818498;
+  font-size: 1rem;
+  line-height: normal;
+  letter-spacing: normal;
+  font-family: "Times New Roman", Times, serif;
+}
+
+@media (max-width: 890px) {
+  .clientTestimonials .persons {
+    grid-template-columns: 1fr;
+    grid-gap: 50px;
+  }
+}
+.imgGall {
+  display: flex;
+  flex-wrap: wrap;
+}
+.imgGall div {
+  width: 25%;
+  min-height: 450px;
+}
+.imgGall div:first-child {
+  background-image: url("../images/image-gallery-milkbottles.jpg");
+}
+.imgGall div:nth-child(2) {
+  background-image: url("../images/image-gallery-cone.jpg");
+}
+.imgGall div:nth-child(3) {
+  background-image: url("../images/image-gallery-sugarcubes.jpg");
+}
+.imgGall div:last-child {
+  background-image: url("../images/image-gallery-orange.jpg");
+}
+
+@media (max-width: 700px) {
+  .imgGall div {
+    width: 100% !important;
+  }
+}
+@media (max-width: 1200px) {
+  .imgGall div {
+    width: 50%;
+  }
 }/*# sourceMappingURL=main.css.map */

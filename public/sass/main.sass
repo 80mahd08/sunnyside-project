@@ -1,8 +1,10 @@
 //start variable declaration
 @use 'tools/_var' as *
 //end variable declaration
+// start importing fonts from google fonts
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,900&display=swap')
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap')
+// start importing fonts from google fonts
 //start header
 header
     background-image: url("../images/image-header.jpg")
@@ -210,8 +212,9 @@ header
     display: flex
     div
         width: 50%
-        padding: 270px 10% 0 20%
+        padding: 290px 10% 0 20%
         text-align: center
+        height: 500px
         h3
             font-family: 'Fraunces', serif
             font-weight: 900
@@ -233,12 +236,12 @@ header
         flex-direction: column
         div
             width: 100% !important
-            height: 500px !important
             padding: 280px 10% 10%
 // end image chan
 // start client testimonials
 .clientTestimonials
     padding: 100px 0 0
+    margin-bottom: 100px
     h3
         text-align: center
         font-family: "Times New Roman", Times, Baskerville, Georgia, serif
@@ -256,7 +259,6 @@ header
             flex-direction: column
             text-align: center
             align-items: center
-            justify-content: space-evenly
             img
                 margin-bottom: 80px
                 width: 100px
@@ -274,5 +276,42 @@ header
                 font-family: 'Fraunces', serif
                 font-size: 25.2px
                 line-height: normal
-
+                margin:
+                    bottom: 10px
+            span
+                color: #818498
+                font-size: 1rem
+                line-height: normal
+                letter-spacing: normal
+                font-family: 'Times New Roman', Times, serif
+@media (max-width: 890px)
+    .clientTestimonials
+        .persons
+            grid-template-columns: 1fr
+            grid-gap: 50px
 // end client testimonials
+// start image gallery
+.imgGall
+    display: flex
+    flex-wrap: wrap
+    div
+        width: 25%
+        min-height: 450px
+        &:first-child
+            background-image: url("../images/image-gallery-milkbottles.jpg")
+        &:nth-child(2)
+            background-image: url("../images/image-gallery-cone.jpg")
+        &:nth-child(3)
+            background-image: url("../images/image-gallery-sugarcubes.jpg")
+        &:last-child
+            background-image: url("../images/image-gallery-orange.jpg")
+
+@media (max-width: 700px)
+    .imgGall
+        div
+            width: 100% !important
+@media ( max-width: 1200px )
+    .imgGall
+        div
+            width: 50%
+// end image gallery
